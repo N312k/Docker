@@ -32,6 +32,6 @@ COPY pyproject.toml .
 
 ENV PYTHONPATH=/app
 
-EXPOSE 8122
+EXPOSE 8096
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8122"]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8096"]
