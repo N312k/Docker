@@ -36,3 +36,4 @@ EXPOSE 8096
 
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8096"]
  
+ 
