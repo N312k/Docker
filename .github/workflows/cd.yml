@@ -25,8 +25,8 @@ jobs:
           podman build -t kubsu .
 
           echo "Stopping old container..."
-          podman stop kubsu  true
-          podman rm kubsu  true
+          podman stop kubsu || true
+          podman rm kubsu || true
 
           echo "Starting new container..."
           podman run -d \
